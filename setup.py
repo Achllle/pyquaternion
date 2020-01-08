@@ -4,7 +4,7 @@ https://github.com/KieranWynn/pyquaternion
 """
 
 # Always prefer setuptools over distutils
-from setuptools import setup, find_packages
+from distutils.core import setup
 # To use a consistent encoding
 from codecs import open
 from os import path
@@ -76,6 +76,7 @@ setup(
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
     packages=['pyquaternion'],
+    package_dir={'': 'src'},
 
     # Alternatively, if you want to distribute just a my_module.py, uncomment
     # this:
