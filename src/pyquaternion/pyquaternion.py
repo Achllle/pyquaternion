@@ -39,7 +39,7 @@ from copy import deepcopy
 import numpy as np # Numpy is required for many vector operations
 
 
-class Quaternion:
+class Quaternion(object):
     """Class to represent a 4-dimensional complex number or quaternion.
 
     Quaternion objects can be used generically as 4D numbers,

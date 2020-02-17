@@ -40,9 +40,7 @@ from random import random
 
 import numpy as np
 
-import pyquaternion
-
-Quaternion = pyquaternion.Quaternion
+from pyquaternion import Quaternion
 
 
 ALMOST_EQUAL_TOLERANCE = 13
