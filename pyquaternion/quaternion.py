@@ -1122,13 +1122,6 @@ class Quaternion:
         """
         return self.q[1:4]
 
-    @vector.setter
-    def vector(self, v):
-        if len(v) != 3:
-            raise AttributeError("Expected vector component to be of length 3 but received length {} instead!"
-                                 .format(len(v)))
-        self.q[1:4] = v
-
     @property
     def real(self):
         return self.scalar
